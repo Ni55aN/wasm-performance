@@ -9,7 +9,7 @@ before_install:
   - docker pull apiaryio/emcc
   - npm install
 
-scripts:
+script:
   - npm run build:docker
 
 cache:
