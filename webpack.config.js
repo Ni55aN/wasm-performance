@@ -7,9 +7,9 @@ module.exports = {
     output: {
         path: require('path').resolve(__dirname, "dist"),
         filename: "bundle.js",
-        publicPath: "/",
+        publicPath: "./",
         library: "MyLibrary",
-        libraryTarget: "umd", 
+        libraryTarget: "umd"
     },
     resolve: {
         extensions: ['.js', ".c", ".cpp"]
