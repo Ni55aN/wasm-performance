@@ -1,11 +1,20 @@
+language: node_js
+node_js: 
+   - "node"
+  
 services:
   - docker
 
 before_install:
   - docker pull apiaryio/emcc
+  - npm install
 
 scripts:
   - npm run build:docker
+
+cache:
+  directories:
+    - "node_modules"
 
 deploy:
   provider: pages
